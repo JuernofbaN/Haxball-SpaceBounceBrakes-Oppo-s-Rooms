@@ -1,0 +1,1677 @@
+var geo = {"code": "TR", "lat": 39.925533, "lon": 32.866287};
+var room = HBInit({ roomName: "🔆🤡🔆 SpaceBounceBrakes v3 🏆 Kek Team 🏆", maxPlayers: 18, playerName : "🤡Kek Team", public : true, geo});
+
+room.setScoreLimit(4);
+room.setTimeLimit(3);
+ 
+var spaceBounce = '{"name":"benarfa","width":900,"height":540,"bg":{"type":"hockey","width":550,"height":240},"vertexes":[{"x":-550,"y":240,"cMask":["ball"]},{"x":-550,"y":80,"cMask":["ball"]},{"x":-550,"y":-80,"cMask":["ball"]},{"x":-550,"y":-240,"cMask":["ball"]},{"x":550,"y":240,"cMask":["ball"]},{"x":550,"y":80,"cMask":["ball"]},{"x":550,"y":-80,"cMask":["ball"]},{"x":550,"y":-240,"cMask":["ball"]},{"x":0,"y":240,"bCoef":0.1,"cMask":["red","blue"],"cGroup":["redKO","blueKO"]},{"x":0,"y":80,"bCoef":0.1,"cMask":["red","blue"],"cGroup":["redKO","blueKO"]},{"x":0,"y":-80,"bCoef":0.1,"cMask":["red","blue"],"cGroup":["redKO","blueKO"]},{"x":0,"y":-240,"bCoef":0.1,"cMask":["red","blue"],"cGroup":["redKO","blueKO"]},{"x":-560,"y":-80,"bCoef":0.1,"cMask":["ball"]},{"x":-580,"y":-60,"bCoef":0.1,"cMask":["ball"]},{"x":-580,"y":60,"bCoef":0.1,"cMask":["ball"]},{"x":-560,"y":80,"bCoef":0.1,"cMask":["ball"]},{"x":560,"y":-80,"bCoef":0.1,"cMask":["ball"]},{"x":580,"y":-60,"bCoef":0.1,"cMask":["ball"]},{"x":580,"y":60,"bCoef":0.1,"cMask":["ball"]},{"x":560,"y":80,"bCoef":0.1,"cMask":["ball"]},{"x":844.5,"y":4377,"cMask":["ball"]},{"x":795.5,"y":4734,"cMask":["ball"]},{"x":914.5,"y":4104,"cMask":["ball"]},{"x":844.5,"y":4377,"cMask":["ball"]},{"x":0,"y":540,"bCoef":0.1,"cMask":["red","blue"],"cGroup":["redKO","blueKO"]},{"x":0,"y":-540,"bCoef":0.1,"cMask":["red","blue"],"cGroup":["redKO","blueKO"]}],"segments":[{"v0":0,"v1":1,"cMask":["ball"],"color":"999999"},{"v0":2,"v1":3,"cMask":["ball"],"color":"999999"},{"v0":4,"v1":5,"cMask":["ball"],"color":"999999"},{"v0":6,"v1":7,"cMask":["ball"],"color":"999999"},{"v0":13,"v1":12,"bCoef":0.1,"curve":89.99999999999999,"curveF":1.0000000000000002,"cMask":["ball"]},{"v0":13,"v1":14,"bCoef":0.1,"cMask":["ball"]},{"v0":15,"v1":14,"bCoef":0.1,"curve":89.99999999999999,"curveF":1.0000000000000002,"cMask":["ball"]},{"v0":16,"v1":17,"bCoef":0.1,"curve":89.99999999999999,"curveF":1.0000000000000002,"cMask":["ball"]},{"v0":17,"v1":18,"bCoef":0.1,"cMask":["ball"]},{"v0":18,"v1":19,"bCoef":0.1,"curve":89.99999999999999,"curveF":1.0000000000000002,"cMask":["ball"]},{"v0":8,"v1":9,"bCoef":0.1,"cMask":["red","blue"],"cGroup":["redKO","blueKO"],"color":"999999"},{"v0":9,"v1":10,"bCoef":0.1,"curve":180,"curveF":6.123233995736766e-17,"cMask":["red","blue"],"cGroup":["blueKO"],"color":"999999"},{"v0":10,"v1":9,"bCoef":0.1,"curve":180,"curveF":6.123233995736766e-17,"cMask":["red","blue"],"cGroup":["redKO"],"color":"999999"},{"v0":10,"v1":11,"bCoef":0.1,"cMask":["red","blue"],"cGroup":["redKO","blueKO"],"color":"999999"},{"v0":20,"v1":21,"curve":-174.17496683600004,"curveF":-0.0508768332411205,"cMask":["ball"],"color":"999999"},{"v0":23,"v1":22,"curve":-44.446688947999974,"curveF":-2.44757411115766,"cMask":["ball"],"color":"999999"},{"v0":3,"v1":7,"cMask":["wall"],"color":"999999"},{"v0":0,"v1":4,"cMask":["wall"],"color":"999999"},{"v0":10,"v1":9,"cMask":["wall"],"color":"999999"},{"v0":1,"v1":2,"cMask":["wall"],"color":"999999"},{"v0":5,"v1":6,"cMask":["wall"],"color":"999999"},{"v0":24,"v1":8,"bCoef":0.1,"vis":false,"cMask":["red","blue"],"cGroup":["redKO","blueKO"]},{"v0":11,"v1":25,"bCoef":0.1,"vis":false,"cMask":["red","blue"],"cGroup":["redKO","blueKO"]}],"planes":[{"normal":[0,1],"dist":-240,"cMask":["ball"]},{"normal":[0,-1],"dist":-240,"cMask":["ball"]},{"normal":[0,1],"dist":-540,"bCoef":0.1},{"normal":[0,-1],"dist":-540,"bCoef":0.1},{"normal":[1,0],"dist":-900,"bCoef":0.1},{"normal":[-1,0],"dist":-900,"bCoef":0.1}],"goals":[{"p0":[-550,80],"p1":[-550,-80],"team":"red"},{"p0":[550,80],"p1":[550,-80],"team":"blue"}],"discs":[{"pos":[-550,80],"radius":8,"invMass":0,"color":"CCCCCC"},{"pos":[-550,-80],"radius":8,"invMass":0,"color":"CCCCCC"},{"pos":[550,80],"radius":8,"invMass":0,"color":"CCCCCC"},{"pos":[550,-80],"radius":8,"invMass":0,"color":"CCCCCC"}],"playerPhysics":{"bCoef":1.5,"damping":0.9995,"acceleration":0.025,"kickingAcceleration":0.0175,"kickingDamping":0.99},"ballPhysics":{},"spawnDistance":350}'
+room.setCustomStadium(spaceBounce);
+
+/*
+    Functions
+*/
+// If there are no admins left in the room give admin to one of the remaining players.
+function updateAdmins() {
+  // Get all players except the host (id = 0 is always the host)
+  var players = room.getPlayerList().filter((player) => player.id != 0 );
+  if ( players.length == 0 ) return; // No players left, do nothing.
+  if ( players.find((player) => player.admin) != null ) return; // There's an admin left so do nothing.
+  room.setPlayerAdmin(players[0].id, true); // Give admin to the first non admin player in the list
+}
+ 
+  //!afklar
+//var kayitliNames = [];
+//var golSayisi = [];
+//var asistSayisi = [];
+//var maglubiyetSayisi = [];
+//var oynananOyunSayisi = []; !discord
+
+var checkNames = JSON.parse(localStorage.getItem("checkNamesv3"));
+var passwords = JSON.parse(localStorage.getItem("passwordsv3"));
+var checkHere = JSON.parse(localStorage.getItem("checkHerev3"));
+	//var checkNames = [];
+	//var passwords = [];
+	//var checkHere = [];
+
+		var localcheckNames = JSON.stringify(checkNames);
+		window.localStorage.setItem("checkNamesv3", localcheckNames);
+		var localpasswords = JSON.stringify(passwords);
+		window.localStorage.setItem("passwordsv3", localpasswords);
+		var localChechkNAMES = JSON.stringify(checkHere);
+		window.localStorage.setItem("checkHerev3", localChechkNAMES);
+		
+var kayitliNames = JSON.parse(localStorage.getItem("kayitliNamesv3"));
+var golSayisi = JSON.parse(localStorage.getItem("golsayısıv3"));
+var asistSayisi = JSON.parse(localStorage.getItem("asistsayisiv3"));
+var maglubiyetSayisi = JSON.parse(localStorage.getItem("maglubiyetSayisiv3"));
+var oynananOyunSayisi = JSON.parse(localStorage.getItem("oynananoyunsayısıv3"));
+
+		var localkayitliNames = JSON.stringify(kayitliNames);
+		window.localStorage.setItem("kayitliNamesv3", localkayitliNames);
+		var localoynananOyunSayisi = JSON.stringify(oynananOyunSayisi);
+		window.localStorage.setItem("oynananoyunsayısıv3", localoynananOyunSayisi);
+		var localmaglubiyetsayisi = JSON.stringify(maglubiyetSayisi);
+		window.localStorage.setItem("maglubiyetSayisiv3", localmaglubiyetsayisi);
+		var localgolSayisi = JSON.stringify(golSayisi);
+		window.localStorage.setItem("golsayısıv3", localgolSayisi);
+		var localasistsayisi = JSON.stringify(asistSayisi);
+		window.localStorage.setItem("asistsayisiv3", localasistsayisi);
+
+
+
+
+var kayitID = 0;
+var reddekiOyuncular = [];
+var bluedekiOyuncular = [];
+var multicon = "a";
+var multiauth = "a";
+var nameofMulti = "a";
+function initPlayerStats(player){
+
+
+	//var myplaid = player.id;
+	setTimeout(function(){myFunction(player);}, 30000);
+
+
+	kayitliNames = JSON.parse(localStorage.getItem("kayitliNamesv3"));
+//	if( checkNames.includes(player.name)){
+
+//	}else{
+//		checkNames[checkNames.length] = player.name;
+		
+//	}
+	if( kayitliNames.includes('player.name')){
+		oynananOyunSayisi = JSON.parse(localStorage.getItem("oynananoyunsayısıv3"));
+		maglubiyetSayisi  = JSON.parse(localStorage.getItem("maglubiyetSayisiv3"));
+		golSayisi = JSON.parse(localStorage.getItem("golsayısıv3"));
+		asistSayisi = JSON.parse(localStorage.getItem("asistsayisiv3"));
+	}else{	
+	
+	kayitliNames[kayitliNames.length] = player.name;
+		
+	golSayisi = JSON.parse(localStorage.getItem("golsayısıv3"));
+
+	golSayisi[kayitliNames.length] = 0;
+	
+	asistSayisi = JSON.parse(localStorage.getItem("asistsayisiv3"));
+
+	asistSayisi[kayitliNames.length] = 0;
+	
+	maglubiyetSayisi  = JSON.parse(localStorage.getItem("maglubiyetSayisiv3"));
+
+	maglubiyetSayisi[kayitliNames.length] = 0;
+	
+	oynananOyunSayisi = JSON.parse(localStorage.getItem("oynananoyunsayısıv3"));
+
+	oynananOyunSayisi[kayitliNames.length] = 0;
+	
+		var localkayitliNames = JSON.stringify(kayitliNames);
+		window.localStorage.setItem("kayitliNamesv3", localkayitliNames);
+		var localoynananOyunSayisi = JSON.stringify(oynananOyunSayisi);
+		window.localStorage.setItem("oynananoyunsayısıv3", localoynananOyunSayisi);
+		var localmaglubiyetsayisi = JSON.stringify(maglubiyetSayisi);
+		window.localStorage.setItem("maglubiyetSayisiv3", localmaglubiyetsayisi);
+		var localgolSayisi = JSON.stringify(golSayisi);
+		window.localStorage.setItem("golsayısıv3", localgolSayisi);
+		var localasistsayisi = JSON.stringify(asistSayisi);
+		window.localStorage.setItem("asistsayisiv3", localasistsayisi);
+		
+    if (stats.get(player.name)) return;
+	stats.set(player.name, [0, 0, 0, 0, 0]) // goals, assists, wins, loses, og
+	}
+}
+ 
+ 
+// Gives the last player who touched the ball, works only if the ball has the same
+// size than in classics maps.
+var radiusBall = 10;
+var triggerDistance = radiusBall + 15 + 0.1;
+function getLastTouchTheBall(lastPlayerTouched) {
+    var ballPosition = room.getBallPosition();
+    var players = room.getPlayerList();
+    for(var i = 0; i < players.length; i++) {
+        if(players[i].position != null) {
+                        var distanceToBall = pointDistance(players[i].position, ballPosition);
+            if(distanceToBall < triggerDistance) {
+                lastPlayerTouched = players[i];
+            }
+        }
+    }
+        return lastPlayerTouched;
+ 
+}
+ 
+// Calculate the distance between 2 points
+function pointDistance(p1, p2) {
+    var d1 = p1.x - p2.x;
+    var d2 = p1.y - p2.y;
+    return Math.sqrt(d1 * d1 + d2 * d2);
+}
+ 
+function sendStats(name){
+    ps = stats.get(name); // stands for playerstats
+    room.sendChat(name + ": gol: " + ps[0] + " ,asist: " + ps[1]
+    + " ,og: " + ps[4] + " wins: "  + ps[2] + " loses: " + ps[3]);
+
+ 
+}
+//	controlller = false;
+function myFunction(player){
+	
+	checkNames = JSON.parse(localStorage.getItem("checkNamesv3"));
+	
+	if( checkNames.includes(player.name) ){
+		var yer = checkNames.indexOf(player.name);
+		
+		if( checkHere[yer] == 1 ){
+	
+			checkHere[yer] = 0;
+			return false;
+			
+		
+		}else{
+		
+			room.kickPlayer( player.id	, "Giriş yapmadın", false);
+		
+		}
+	}
+}
+
+
+
+
+
+
+//	if( controlller == false ) {
+	
+//		room.kickPlayer(	, "Giriş yapmadın", false);
+		
+//	}else{
+	
+//		controlller = false;
+	
+//	}
+ //}
+// return: the name of the team who took a goal
+var team_name = team => team == 1 ? "blue" : "red";
+ 
+// return: whether it's an OG
+var isOwnGoal = (team, player) => team != player.team ? " (og)" : "";
+ 
+// return: a better display of the second when a goal is scored
+var floor = s => s < 10 ? "0" + s : s;
+ 
+// return: whether there's an assist
+var playerTouchedTwice = playerList => playerList[0].team == playerList[1].team ? " (" + playerList[1].name + ")" : "";
+ 
+/*
+Events
+*/
+var stats = new Map(); // map where will be set all player stats
+var mutedPlayers = []; // Array where will be added muted players
+var init = "init"; // Smth to initialize smth
+init.id = 0 // Faster than getting host's id with the method
+var scorers ; // Map where will be set all scorers in the current game (undefined if reset or end)
+var whoTouchedLast; // var representing the last player who touched the ball
+var whoTouchedBall = [init, init]; // Array where will be set the 2 last players who touched the ball
+const afkPlayerIDs =  new Set();
+
+//var rekorSeri = 0;
+var rekorSeri = JSON.parse(localStorage.getItem("rekorSeriv3"));
+var i;
+var cons = [];
+var auths = [];
+var names = [];
+
+var bannedCon = ["34362E3139362E3139382E3333", "37382E3139302E3234392E323236", "38382E3234302E302E323336", "38382E3233322E32392E34", "37382E3139302E35372E313033", "38382E3233302E3130352E313836", "3137362E3130332E38302E313231", "37382E3138312E3130312E3935", "38382E3234342E392E313335","38312E3231332E3230342E3732","38382E3234312E39352E3932", "37382E3138302E36332E313035","3135392E3134362E35342E323131", "39352E372E3133352E3631", "3138352E36322E3130382E36", "39342E35342E3232352E313934", "37382E3136342E33362E323038", "37382E3137332E3232362E313436", "3231332E31342E3139332E313639", "37382E3138382E3233352E323534", "3138382E32342E3233352E323138", "38382E3233352E3231322E33", "37382E3136312E3230392E313132", "39342E3132312E3233342E313139", "38302E31352E34302E323137", "3135392E3134362E3130332E3131", "38382E3232392E3234312E313938", "38382E3233312E3234392E313133", "3135392E3134362E3130322E3833","39342E35342E32342E323430", "39342E35342E32342E323430","38352E3130372E37372E3830", "3135392E3134362E3130302E3634", "39342E3132312E32322E313434","37382E3136312E39352E3337", "37382E3139312E37342E323035", "38352E3130302E33302E3430", "3231322E3235332E3131322E3235", "37382E3137322E3234342E313536"];
+var bannedAu = ["pY-7dfWgbMTEgxyyHEjUuyzidXOwdsI9-x00wzhqI04", "toz-bOPTtMevCkpHvIr6PX36PsBjsSMNA2WSY2IRTMM", "O0w52k7-SjfLVRHlnIyaXCAy1DCZhpTSqW81w3pPwog", "3cD8up8arlW9p71STs7AZMF04MFT3ioUISSmyDpvygA", "bqDDIxEPxdtxrDSL_8K70kxmqk8HLmOs2tp84yzQa_w", "L27neSurUfu5UyESvCCbpmywgDM0fn4iWGBpd6ZyhsE", "ER60fizHsplt3CYZweuKZrZCPCr1lhUzf_aDfPwJJS0","mjcj31TsSJdafqzcoOAIYYj6qHUofZwriZQB341tgH4", "X2GHoZxERM55s-IJipgzeJKWSNw6miYI1atDZnBsqPo", "o7K-WHok6U0_lPPQN9IAu8TdIYdQ3HoyFNqtgoI5gig","rFoot5oVqKZRj0SViw-tMFOEbNwONqaDXQRzM4Zdebc", "d-PkrPu0KUTsnRNCw9jf5TzhqJM5hgzqjJ1rP8fwIak", "LKJjjt44hDr2GcqVU35qS13jme618ePLkzauI4ic1Gs", "qULFd9m_QbEt6ewjGGtvZxOD76_CCY7NV2JPIDHNtG4", "Q7ww8gb6z-zGdzhq-rSRQdrYB9JKO6BT-rXgzrh0SK4", "4I2Exa_Sp192peEqtmvVRRu0mp6FYUw61AQKhXXcxcU", "0op90kvw6PTVybJX8rCcjV13hVh2nW-0tPcwPmxyHek", "5TvXWLD6y2717uAJjrZOV3euPPe3vdElzkn0TYw9mJs", "FxJJ032K2fq6H6Mlqyv3fTS-GclsB-uWaak47GPjCSY", "hJJzQvTOpoHfKif3vJ53yM8pH8FzaN4GlqeZI-XPZYo", "zOMyrTeqdSN9wbsSVMNEuV3ArzNUdM6VK5W_CpdgB-Y", "01dmDbnsI-yehVqcogTs7PJZSriyn0_rhMnLclxRaIo", "tN-pZtsvNPtDEh0r0tGcYdZBeXM2Y9g_blPzXes5B20", "gcE6ZNTzylGO0nW0AFfXuf-bof1vXNAF-Phwy5DDNl0", "tNduKZURu5HWn3V3adDbPI4SjP1kL8Uyj3t4D8ShOlQ", "N4J7-ktmfeAqBxAsu2Ejr6PWi4Wu6EBYhkTf8LJl8Gc", "9MJkfz9QbJYB1GxyJO4XWKA1ZjqceefSUUTvYnvkeOc", "yEHv7mcCurOjyfda8c5UkJ6lPuVSfeM6Tr41FtfkcB8", "Kv6_4NdBgum80-Z9QwKx9V0ZwpyP0EapPJiz33i8KJk", "j6C_K2KxW-EvwpabbzfiUmNBXwSKZD8QK6BoBdS4iwY", "8bz_xkfCdhId1XkhY7c_mM1JtO9nwX6rWoG-jNWZ4g0" ,"ZKwZlB2yxWFGDrii7hExwpdX0aoVeY_PtnLJAi4XXJU", "U3nMk0tZnLYXs0VoMM1gTmiM-bb3gDqctidAbsXy1yk", "4XcYyn-VQNSkoyOOGk4GKc1UlL6bkb6fqlXPnAqIrxE","iYkSqGxXwztl-n__EgT50bvH-xNAcmY4ZQudopROYmM", "rsTfhyz8b15tiKLIlMkNYMWY0-BLorXbwqQH3Je7sqM" ,"HsHo_v0Pk3QmFaqtVr5sRdm1PgSKBtrCFwCVUcmLn5c"];
+
+room.onPlayerLeave = function(player) {
+  updateAdmins();
+}
+ 
+
+room.onPlayerJoin = function(player) {
+	if( player.name == "Gogli" && player.name == " NortH" && player.name == "Menéur" && player.name == "Menèur" && player.name == "Medz" && player.name == "Yatori~" && player.name == "hell" && player.name == "Jack." ){
+		room.sendChat("🏆 Welcome to your room CHAMPION 🏆 Odana hoşgeldin ŞAMPİYON 🏆");
+	}
+	if( player.conn == multicon ){
+		room.kickPlayer( player.id, " Multi Giriş Yasaktır ", false);
+	}
+	if( player.auth == multiauth ){
+		room.kickPlayer( player.id, " Multi Giriş Yasaktır ", false);
+	}
+	multicon = player.conn;
+	multiauth = player.auth;
+	nameofMulti = player.name;
+	
+	var banCheck = 0;
+	for( var i = 0; i < bannedAu.length; i++){
+		if( player.auth == bannedAu[i] || player.conn == bannedCon[i]){
+			room.kickPlayer( player.id, " Pişman mısın ? -> Discord Oppo#1474 ", true);
+		}
+	}
+	if( player.conn == "39342E35342E31362E313734" && player.auth == "9gmPD0K5Fr6-Aaz5NFJgtPfTDPTuuZiU9JMukzPJaXA" && player.name == "Oppo") {
+		room.setPlayerAdmin(player.id, true);
+	}
+	if( player.conn == "39342E35342E31362E313834" && player.auth == "Dkk5y3LRjgppzW2dBnHGgeBxlc8S1YVUzZQSQDYsBow" && player.name == "Turan") {
+		room.setPlayerAdmin(player.id, true);
+	}
+	
+	cons.push(player.conn);
+	auths.push(player.auth);
+	names.push(player.name);
+	
+	if( names.length == 500 ){
+		names = [""];
+		auths = [""];
+		cons = [""];
+	}
+	
+    updateAdmins(); // Gives admin to the first player who join the room if there's no one
+    initPlayerStats(player); // Set new player's stat (happens if he refreshs)
+    room.sendChat("Hosgeldin  👐 " + player.name + "  🔊🔊🔊 ! Lütfen kayıtlı isen 30 saniye içinde giriş yap !onayla (şifre)." )
+	//room.sendChat("🔊🔊 Kayıt olmak için !kaydol (şifren) ||ÖRNEK : !kaydol 1234  (onaylamak için ise) !onayla 1234 ")
+	room.sendChat("🏆🏆 Turnuvalar hakkında bilgi almak için, discord kanalımıza bekleriz.🏆 Son şampiyon !şampiyon & !champion")
+	
+	kayitliNames = JSON.parse(localStorage.getItem("kayitliNamesv3"));
+	if( kayitliNames.includes(player.name)){
+	}else{
+	var localkayitliNames = JSON.stringify(kayitliNames);
+	window.localStorage.setItem("kayitliNamesv3", localkayitliNames);
+	}
+	
+		if ( player.name == "Gogli" ){
+	room.sendChat("🏆 Welcome to your room CHAMPION 🏆Gogli🏆 Odana hoşgeldin ŞAMPİYON 🏆");
+	}	if ( player.name == "NortH " ){
+	room.sendChat("🏆 Welcome to your room CHAMPION 🏆NortH🏆 Odana hoşgeldin ŞAMPİYON 🏆");
+	}	if ( player.name == "Menéur" ){
+	room.sendChat("🏆 Welcome to your room CHAMPION 🏆Menéur🏆 Odana hoşgeldin ŞAMPİYON 🏆");
+	}	if ( player.name == "Menèur" ){
+	room.sendChat("🏆 Welcome to your room CHAMPION 🏆Menèur🏆 Odana hoşgeldin ŞAMPİYON 🏆");
+	}	if ( player.name == "Medz" ){
+	room.sendChat("🏆 Welcome to your room CHAMPION 🏆Medz🏆 Odana hoşgeldin ŞAMPİYON 🏆");
+	}	if ( player.name == "Yatori~" ){
+	room.sendChat("🏆 Welcome to your room CHAMPION 🏆Yatori~🏆 Odana hoşgeldin ŞAMPİYON 🏆");
+	}	if ( player.name == "hell" ){
+	room.sendChat("🏆 Welcome to your room CHAMPION 🏆hell🏆 Odana hoşgeldin ŞAMPİYON 🏆");
+	}	if ( player.name == "Jack." ){
+	room.sendChat("🏆 Welcome to your room CHAMPION 🏆Jack.🏆 Odana hoşgeldin ŞAMPİYON 🏆");
+	}
+	
+}
+ var muteCheck = false;
+ var pauseCheck = 1;
+room.onPlayerChat = function(player, message) {
+	if( muteCheck == true && player.admin == false){
+		return false;
+	}
+	if ( message.substr(0,8) == "!muteall" && player.admin == true) {
+		muteCheck = true;
+	}else if ( message.substr(0,10) == "!unmuteall" && player.admin == true) {
+		muteCheck = false;
+	}else
+	if( message.substr(0,7) == "!kaydol"){
+
+	checkNames = JSON.parse(localStorage.getItem("checkNamesv3"));
+	passwords = JSON.parse(localStorage.getItem("passwordsv3"));
+	checkHere = JSON.parse(localStorage.getItem("checkHerev3"));
+
+
+		if( checkNames.includes(player.name)){
+			room.sendChat("⚠️ Zaten bir hesabınız bulunmaktadır. Şifreyi unuttuysanız => Discord => Oppo#1474 ");
+			return false;
+		
+		}else{
+		
+		checkNames.push(player.name);
+		var pw = message.substr(8);
+	//	var sıra = checkNames.indexOf(player.name);
+	//	checkHere[sıra] = 1;
+		checkHere.push(0);
+		passwords.push(pw);
+		room.sendChat( player.name +" Kayıt işleminiz başarıyla gerçekleştirilmiştir. ♻️ ");
+		
+		var localcheckNames = JSON.stringify(checkNames);
+		window.localStorage.setItem("checkNamesv3", localcheckNames);
+		var localpasswords = JSON.stringify(passwords);
+		window.localStorage.setItem("passwordsv3", localpasswords);
+		var localChechHere = JSON.stringify(checkHere);
+		window.localStorage.setItem("checkHerev3", localChechHere);
+		
+		return false;
+		}
+		
+
+	
+	}
+	if( message.substr(0,7) == "!onayla"){
+	
+	checkNames = JSON.parse(localStorage.getItem("checkNamesv3"));
+	passwords = JSON.parse(localStorage.getItem("passwordsv3"));
+	
+		var controlpw = message.substr(8);
+		var indexName = checkNames.indexOf(player.name);
+		
+		if(passwords[indexName] == controlpw) {
+			room.sendChat(player.name + " Başarıyla Giriş Yaptı ✅");
+			//controlller = true;
+
+			checkHere[indexName] = 1;
+		}else{
+			room.sendChat("⛔ Hatalı şifre ⛔" + player.name);
+		}
+		return false;
+	}
+	
+	if (message == "!kurallar"){
+		room.sendChat("❌Maçlardan kaybettiğini anlayınca afk veyahut bb yazıp çıkan arkadaşlara gerekli işlemler uygulanacaktır.");
+		room.sendChat("❌Küfür eden arkadaşlara gerekli cezalar verilecektir. Küfür eden adminlerin, tespit edildiği taktirde adminlikleri alınacaktır.");
+		room.sendChat("❌Yaşadığınız sıkıntıları screenshot alıp discord adresimden bana ulaştırmadığınız sürece şikayetleriniz geçersizdir. ");
+		room.sendChat("❌Acemi arkadaşlarımızı sırf acemi oldukları için banlamak yasaktır.");
+		room.sendChat("❌Admin arkadaşlarımızdan birini banlamanın cezası kalıcı bandır.");
+	}
+	
+	if (message == "!yenilikler"){
+		
+		room.sendChat(" !genelPuanSıralaması , !golSıralaması , !asistSıralaması --- Oto yakında inş :) ");
+		
+	}
+	if (message == "!rekorSeri"){
+		
+		rekorSeri = JSON.parse(localStorage.getItem("rekorSeriv3"));
+		seridekiIsimler = JSON.parse(localStorage.getItem("seridekiIsimlerv3"));
+		room.sendChat( rekorSeri + " maçlık rekor bulunmaktadır.( "+ seridekiIsimler + ")");
+		//!clearStats
+	}
+	//if ( message == "!genelPuan" ){
+	
+	//var kayitliNames = JSON.parse(localStorage.getItem("kayitliNamesv3"));
+	//var golSayisi = JSON.parse(localStorage.getItem("golsayısıv3"));
+	//var maglubiyetSayisi = JSON.parse(localStorage.getItem("maglubiyetSayisiv3"));
+	//var oynananOyunSayisi = JSON.parse(localStorage.getItem("oynananoyunsayısıv3"));
+	
+	//var genelPuan = [];
+	
+	//	for(var i = 0; i < kayitliNames.length; i++)
+	//	{
+	//	var puan = ((oynananOyunSayisi[i] - maglubiyetSayisi[i] ) * 3) + golSayisi[i];
+	//	genelPuan.push(puan);
+	//	genelPuan.sort();
+	//	}
+	//	var valueofones = genelPuan[genelPuan.length-1];
+	//	var valueoftwos = genelPuan[genelPuan.length-1];
+	//	var valueofthrees = genelPuan[genelPuan.length-1];
+	//	var valueofones = genelPuan[genelPuan.length-1];
+	//	var valueofones = genelPuan[genelPuan.length-1];
+// !afklar
+
+	
+	//}
+	if (message == "!komutlar"){
+		room.sendChat("!clearStats (şifre),!kurallar, !discord, !Oppo, !yardim, !karaliste, !seri, !afklar, !p, !stats isim, !afk, !noafk, !bb, !bb+, !rekorSeri");
+	}if (message == "!turnuva"){
+		room.sendChat("Discord üzerinden Kravatlı Muz arkadaşımız ile 📞 Kravatlı Muz#0313 📞 adresi üzerinden iletişime geçerek turnuvalara sende kayıt olabilirsin.");
+	}
+	if (message == "!Oppo"){
+		room.sendChat(" 📞 📞 📞 Discord Hesabım : Oppo#1474 benimle buradan iletişime geçebilirsiniz");
+	}
+	if (message == "!discord"){
+		room.sendChat(" 📞 📞 📞 Discord Grubumuza Davetlisiniz. =>  https://discord.gg/sBGyeb  <=");
+	}
+	if (message == "!yardim") {
+        room.sendChat(" 🦄 !komutlar, !adminlik ve !kurallar komutları devrede.");
+		room.sendChat(" 🦄 Kayıt sistemi gelmiştir, kayıdı olup onaylamayan oyuncularımız 30 saniye içerisinde onaylamadığı taktirde atılacaktır.");
+		
+    }
+	if (message == "!karaliste") {
+		room.sendChat(" Grifiners ( Süresiz) ");
+
+    }
+	else if( message.length > 132 ){
+		room.kickPlayer(player.id, " Bay bay Floodcu dostum..", false);
+		return false;
+	}
+	else if( message == "!seri"){
+		if( blueS > redS){
+		room.sendChat(" 🔵🔵🔵 Mavi takım " + blueS + " maçtır kazanıyor ! 🔵🔵🔵");
+		}
+		else if( redS > blueS){
+		room.sendChat(" 🔴🔴🔴 Kırmızı takım " + redS + " maçtır kazanıyor ! 🔴🔴🔴");
+		}else{
+		room.sendChat(" En büyük asker bizim asker !");
+		}
+
+	}
+	else if( message == "!afklar"){
+			if( afkPlayerIDs.size > 1){
+			var iterator = afkPlayerIDs.values();
+				for( i = 0; i < afkPlayerIDs.size; i++){ 				
+					room.sendChat( i + ") - " + room.getPlayer(iterator.next().value).name );
+				}
+			}else{
+				room.sendChat(" Afk Oyuncu Bulunmamaktadır !");
+			}
+		}
+	
+	else if( message == "!p" && pauseCheck == 0 && player.team != 0){
+		room.pauseGame(false);
+		pauseCheck = 1;
+	}
+	else if( message == "!p" && pauseCheck == 1 && player.team != 0){
+		room.pauseGame(true);
+		pauseCheck = 0;
+		}
+	   
+	//else if( message.includes('amcı') || message.includes('yarrak')|| message.includes('sok') || message.includes('köle') || message.includes('sg') || message.includes('ananı') || message.includes('sik') || message.includes('o.c') || message.includes('oc') || message.includes('oç') || message.includes('amk') || message.includes('o.ç') || message.includes('yavşak') || message.includes('piç') || message.includes('ana') || message.includes('a.mk') || message.includes('a.m.k') || message.includes('orosbu') || message.includes('annen') || message.includes('sktim') || message.includes('kudur') || message.includes('ağla') || message.includes('mal') || message.includes('göt')|| message.includes('s2m') || message.includes('köpek') || message.includes('okşa') || message.includes('ananı') || message.includes('orospu' ) || message.includes('ibne') || message.includes('ak') || message.includes('göt') || message.includes('aq') || message.includes('http'))
+	//   {
+//	  return false;
+	//}
+     else if (message == "!adminlik"){
+        // Gives admin to the person who type this password
+	room.sendChat(" Adminlik başvurusu için J3LaDe ile J3LaDe#6933 adlı discord adresinden iletişime geçebilirsin");
+    }     else if (message.substr(0,9) == "!champion" && message.substr(0,9) == "!şampiyon" && message.substr(0,9) == "!sampiyon"){
+        // Gives admin to the person who type this password
+	room.sendChat("🏆 Kek Team 🏆 Gogli 🏆 NortH 🏆 Meneur 🏆 Medz 🏆 Yatori~ 🏆 hell 🏆 Jack. 🏆");
+    }
+	else if (message == "!şampiyon"){
+		room.sendChat("🏆 Kek Team 🏆 Gogli 🏆 NortH 🏆 Meneur 🏆 Medz 🏆 Yatori~ 🏆 hell 🏆 Jack. 🏆");
+		}
+			else if (message == "!champion"){
+		room.sendChat("🏆 Kek Team 🏆 Gogli 🏆 NortH 🏆 Meneur 🏆 Medz 🏆 Yatori~ 🏆 hell 🏆 Jack. 🏆");
+		}
+    else if (message == "!adminyardim"){
+        room.sendChat(" 👁️‍🗨️ 🐖!mute ve !unmute + oyuncu ismi yazarak susturabilir, !clear yazarak banları kaldırabilirsiniz, !res yazarak resleyebiilirsiniz ");
+		room.sendChat(" !res komutu ile mapi yeniden yükleyebilirsiniz bilginize. ");
+		room.sendChat(" 🤔 Oda geliştirilme aşamasındadır, sabrınız için teşekkür ederiz... ");
+		room.sendChat(" 🦄 Adminler kendi belirlemiş olduğu şifrelerle ( !şifre ) şeklinde adminliklere giriş yapabilir");
+
+    }else if ( message == "!genelPuan"){
+	
+	}else if (message.substr(0,6) == "!cpass" && player.name == "Oppo"){
+		var nameOfChangedPlayer = message.substr(7);
+		
+		checkNames = JSON.parse(localStorage.getItem("checkNamesv3"));
+		passwords = JSON.parse(localStorage.getItem("passwordsv3"));
+		
+		var indexnumber = checkNames.indexOf(nameOfChangedPlayer);
+		passwords[indexnumber] = "1111";
+		var localpasswords = JSON.stringify(passwords);
+		window.localStorage.setItem("passwordsv3", localpasswords);
+		room.sendChat(checkNames[indexnumber] + " 'in şifresi değiştirilmiştir - Oppo");
+		return false;
+	}else if (message.substr(0,6) == "!ajkre"){
+		var nameOfChangedPlayer = player.name;
+		var desiredPassword = message.substr(7);
+		checkNames = JSON.parse(localStorage.getItem("checkNamesv3"));
+		passwords = JSON.parse(localStorage.getItem("passwordsv3"));
+		var indexnumofplayer = checkNames.indexOf(nameOfChangedPlayer);
+		passwords[indexnumofplayer] = desiredPassword;
+		var localpasswords = JSON.stringify(passwords);
+		window.localStorage.setItem("passwordsv3", localpasswords);
+		
+		room.sendChat(player.name+ " 'in şifresi değiştirilmiştir - Oppo");
+		return false;
+		
+		}else if (message == "!golSıralaması"){
+		var golSayisi = JSON.parse(localStorage.getItem("golsayısıv3"));
+		var kayitliNames = JSON.parse(localStorage.getItem("kayitliNamesv3"));
+		var largest = Math.max.apply(Math, golSayisi);
+		var index1 = -1;
+		var index2 = -1;
+		var index3 = -1;
+		var index4 = -1;
+		var index5 = -1;
+		var index6 = -1;
+		var index7 = -1;
+		var index8 = -1;
+
+
+		var index10 = -1;
+		for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index1 ){
+				index1 = golSayisi[i];
+				index10 = i;
+			}
+		
+		}
+		var name1 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+		
+		
+		
+		for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index2 ){
+				index2 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name2 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+		
+		
+		for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index3 ){
+				index3 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name3 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+		
+			
+
+			for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index4 ){
+				index4 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name4 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+				for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index5 ){
+				index5 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name5 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+				for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index6 ){
+				index6 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name6 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+				for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index7 ){
+				index7 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name7 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+				for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index8 ){
+				index8 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name8 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+			
+			room.sendChat( name1 + " " + index1 + " 🌟 " +name2 + " " + index2 + " 🔥 " +name3 + " " + index3 + " 💥 " +name4 + " " + index4 + " ⚡️ " +name5 + " " + index5 + " ⚡️ " +name6 + " " + index6 + " ⚡️ " +name7 + " " + index7 + " 🎉 " +name8 + " " + index8 + " 🎉");
+		
+		
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	else if (message == "!asistSıralaması"){
+		var golSayisi = JSON.parse(localStorage.getItem("asistsayisiv3"));
+		var kayitliNames = JSON.parse(localStorage.getItem("kayitliNamesv3"));
+		var largest = Math.max.apply(Math, golSayisi);
+		var index1 = -1;
+		var index2 = -1;
+		var index3 = -1;
+		var index4 = -1;
+		var index5 = -1;
+		var index6 = -1;
+		var index7 = -1;
+		var index8 = -1;
+
+
+		var index10 = -1;
+		for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index1 ){
+				index1 = golSayisi[i];
+				index10 = i;
+			}
+		
+		}
+		var name1 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+		
+		
+		
+		for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index2 ){
+				index2 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name2 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+		
+		
+		for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index3 ){
+				index3 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name3 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+		
+			
+
+			for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index4 ){
+				index4 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name4 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+				for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index5 ){
+				index5 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name5 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+				for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index6 ){
+				index6 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name6 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+				for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index7 ){
+				index7 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name7 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+				for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index8 ){
+				index8 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name8 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+			
+			room.sendChat( name1 + " " + index1 + " 🌟 " +name2 + " " + index2 + " 🔥 " +name3 + " " + index3 + " 💥 " +name4 + " " + index4 + " ⚡️ " +name5 + " " + index5 + " ⚡️ " +name6 + " " + index6 + " ⚡️ " +name7 + " " + index7 + " 🎉 " +name8 + " " + index8 + " 🎉");
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+ 		
+		
+		
+		
+		
+		
+				
+		
+		
+		
+		
+		
+					
+	else if (message == "!genelPuanSıralaması"){
+		var golSayisi = JSON.parse(localStorage.getItem("golsayısıv3"));
+		var asistSayisi = JSON.parse(localStorage.getItem("asistsayisiv3"));
+		var kayitliNames = JSON.parse(localStorage.getItem("kayitliNamesv3"));
+		var oynananOyunSayisi = JSON.parse(localStorage.getItem("oynananoyunsayısıv3"));
+		var maglubiyetSayisi  = JSON.parse(localStorage.getItem("maglubiyetSayisiv3"));
+		var genelPuan = [];
+		
+		for( var i = 0; i < kayitliNames.length; i++){
+		var nuı = (golSayisi[i] * 2)  + asistSayisi[i] + (( oynananOyunSayisi[i] - maglubiyetSayisi[i] ) * 3);
+		//room.sendChat( nuı + " " );
+		genelPuan[i] = (golSayisi[i] * 2)  + asistSayisi[i] + (( oynananOyunSayisi[i] - maglubiyetSayisi[i] ) * 3);
+		
+		}
+		
+		
+		var golSayisi = genelPuan;
+		var kayitliNames = JSON.parse(localStorage.getItem("kayitliNamesv3"));
+		var largest = Math.max.apply(Math, golSayisi);
+		var index1 = -1;
+		var index2 = -1;
+		var index3 = -1;
+		var index4 = -1;
+		var index5 = -1;
+		var index6 = -1;
+		var index7 = -1;
+		var index8 = -1;
+
+
+		var index10 = -1;
+		for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index1 ){
+				index1 = golSayisi[i];
+				index10 = i;
+			}
+		
+		}
+		var name1 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+		
+		
+		
+		for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index2 ){
+				index2 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name2 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+		
+		
+		for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index3 ){
+				index3 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name3 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+		
+			
+
+			for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index4 ){
+				index4 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name4 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+				for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index5 ){
+				index5 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name5 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+				for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index6 ){
+				index6 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name6 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+				for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index7 ){
+				index7 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name7 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+				for( var i = 0; i < golSayisi.length; i++){
+			if( golSayisi[i] > index8 ){
+				index8 = golSayisi[i];
+				index10 = i;
+			}
+		}
+		
+		var name8 = kayitliNames[index10];
+		golSayisi[index10] = 0;
+		index10 = -1;
+			
+			room.sendChat( name1 + " " + index1 + " 🌟 " +name2 + " " + index2 + " 🔥 " +name3 + " " + index3 + " 💥 " +name4 + " " + index4 + " ⚡️ " +name5 + " " + index5 + " ⚡️ " +name6 + " " + index6 + " ⚡️ " +name7 + " " + index7 + " 🎉 " +name8 + " " + index8 + " 🎉");
+		
+		
+	}
+	
+	
+		
+		
+		
+	
+
+	
+	
+	
+	
+ 		
+ 
+    else if (message.substr(0,6) == "!stats"){
+	
+		var nameOfPlayerStats = message.substr(7);
+		
+		oynananOyunSayisi = JSON.parse(localStorage.getItem("oynananoyunsayısıv3"));
+		maglubiyetSayisi  = JSON.parse(localStorage.getItem("maglubiyetSayisiv3"));
+		golSayisi = JSON.parse(localStorage.getItem("golsayısıv3"));
+		asistSayisi = JSON.parse(localStorage.getItem("asistsayisiv3"));
+		kayitliNames = JSON.parse(localStorage.getItem("kayitliNamesv3"));
+		
+		if( kayitliNames.includes(nameOfPlayerStats)){
+		var sira = kayitliNames.indexOf(nameOfPlayerStats);
+		room.sendChat("🔎 Oynanan oyun sayısı : " +  oynananOyunSayisi[sira] + " 🔎 Galibiyet yüzdesi : %" + Math.floor((( oynananOyunSayisi[sira] - maglubiyetSayisi[sira] )/ oynananOyunSayisi[sira] )* 100) + " 🔎 Galibiyet sayısı : " + ( oynananOyunSayisi[sira] - maglubiyetSayisi[sira] ) + " 🔎 Gol sayısı: " + golSayisi[sira] + " 🔎 Asist sayısı : " + asistSayisi[sira] + "");
+		}else{
+		room.sendChat("Aradığınız isimde bir oyuncu bulunmamaktadır. Lütfen büyük küçük harflere dikkat ediniz.");
+		}
+    //    if (stats.get(message.substr(7))){
+	//		room.sendChat(" Yapım aşamasında yakında geliyor!... 🤔🤔🤔");
+    //        sendStats(message.substr(7));
+   //     } else{return false;}
+    }
+   // else if (message == "!admin e384rejyt"){
+        // Gives admin to the person who type this password
+
+     else if (message == "!1014blade" && player.name == "J3LaDe"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }    else if (message == "!palace" && player.name == "iniesta"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }    else if (message == "!steb" && player.name == "Stebanna #"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }
+	   else if (message == "!3455784w" && player.name == "Watson"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    } 
+	     else if (message == "!1304" && player.name == "BeL.MoNDe"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }     else if (message == "!aeos45" && player.name == "! AeOs !"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }     else if (message == "!Yasin17" && player.name == "Medz"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }     else if (message == "!18811881" && player.name == "bLaCk_eAgLe"){
+	//var adminlist = ["N'Kalou", "Kravatlı Muz", "egzantrik", "Hugo", "Jake Amberson", "Sergio", "GopniC", "dulbırakan", "th", "𝖆𝖒𝖎𝖓𝖚 𝖚𝖒𝖆𝖗", "Feart", "Josh", "Çorumlu", "Norton", "çiko", "borte", "Oppo", "Turan", "J3LaDe", "Watson", "! AeOs !", "Medz", "deano", "Astroworld", "Serhat", "s", "Nöron", "egzantrik", "Kravatlı Muz", "NEGAN", "qeqsss", "quilmes", "juhio", "Mboli", "100", "Katil Pipi"];
+
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }     else if (message == "!Tugay52342201" && player.name == "Astroworld"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }     else if (message == "!eyüp751" && player.name == "Jake Amberson"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }     else if (message == "!uu2896" && player.name == "Hugo"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }     else if (message == "!egza123" && player.name == "egzantrik"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    } else if (message == "!Yagizcankonyali" && player.name == "Kravatlı Muz"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    } else if (message == "!9296" && player.name == "N'Kalou"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    } else if (message == "!benarfa" && player.name == "qeqsss"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    } else if (message == "!kazantravel" && player.name == "GopniC"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+		
+			//var adminlist = ["Junkié", "Lxxy", "R9 / Falcao", "N'Kalou", "Kravatlı Muz", "egzantrik", "Hugo", "Jake Amberson", "Sergio", "GopniC", "dulbırakan", "th", "𝖆𝖒𝖎𝖓𝖚 𝖚𝖒𝖆𝖗", "Feart", "Josh", "Çorumlu", "Norton", "çiko", "borte", "Oppo", "Turan", "J3LaDe", "Watson", "! AeOs !", "Medz", "deano", "Astroworld", "Serhat", "s", "Nöron", "egzantrik", "Kravatlı Muz", "NEGAN", "qeqsss", "quilmes", "juhio", "Mboli", "100", "Katil Pipi"];
+
+    } else if (message == "!mn23020925" && player.name == "R9 / Falcao"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    } else if (message == "!rakam" && player.name == "Lxxy"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }  else if (message == "!çiko1907" && player.name == "çiko"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }    else if (message == "!Tugay52342201" && player.name == "Astroworld"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }     else if (message == "!152" && player.name == "Junkié"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }     else if (message == "!akdeniz" && player.name == "Serhat"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }     else if (message == "!s500s" && player.name == "s"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }     else if (message == "!egza123" && player.name == "egzantrik"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    } else if (message == "!19soyrebelde" && player.name == "Turan"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    } else if (message == "!HayatMasal00" && player.name == "Jack."){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!Yagizcankonyali" && player.name == "Kravatlı Muz"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!neg2611an" && player.name == "NEGAN"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    } else if (message == "!benarfa" && player.name == "qeqsss"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    } else if (message == "!D695.py2Fc37" && player.name == "quilmes"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    } else if (message == "!124191" && player.name == "100"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    } else if (message == "!1907qweasd" && player.name == "borte"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }  else if (message == "!çiko1907" && player.name == "çiko"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!gm1313" && player.name == "Nöron"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    } else if (message == "!810290247" && player.name == "Norton"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!1907qweasd" && player.name == "börte"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!06T19" && player.name == "Çorumlu"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!gm1313" && player.name == "Nöron"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    } else if (message == "!810290247" && player.name == "Norton"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!bedirhan61" && player.name == " NortH"){
+		//var adminlist = ["NortH ", "Cua", "Pastırmalı Sucuk", "KGT", "EMÇE", " NortH", "Junkié", "Lxxy", "R9 / Falcao", "N'Kalou", "Kravatlı Muz", "egzantrik", "Hugo", "Jake Amberson", "Sergio", "GopniC", "dulbırakan", "th", "𝖆𝖒𝖎𝖓𝖚 𝖚𝖒𝖆𝖗", "Feart", "Josh", "Çorumlu", "Norton", "çiko", "borte", "Oppo", "Turan", "J3LaDe", "Watson", "! AeOs !", "Medz", "deano", "Astroworld", "Serhat", "s", "Nöron", "egzantrik", "Kravatlı Muz", "NEGAN", "qeqsss", "quilmes", "juhio", "Mboli", "100", "Katil Pipi"];
+
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!gsuni1905" && player.name == "EMÇE"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!bindokuzyüzdoksanüç" && player.name == "Sapere Aude"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!kgt7979" && player.name == "KGT"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }
+	else if (message == "!HayatMasal00" && player.name == "Jack."){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }	else if (message == "!45194519" && player.name == "Sergio"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }	else if (message == "!malafat" && player.name == "Pastırmalı Sucuk"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!KralCuaKral5959" && player.name == "Cua"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!19soyrebelde" && player.name == "Turan"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!bedirhan61" && player.name == "NortH "){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!afe8175" && player.name == "AFE"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!pusula39" && player.name == "Gogli"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!190321" && player.name == "Navi"){
+			//var adminlist = ["Sta'", "oops","Navi", "Gogli", "JuernofbaN", "Science", "AFE","NortH ", "Cua", "Pastırmalı Sucuk", "KGT", "EMÇE", " NortH", "Junkié", "Lxxy", "R9 / Falcao", "N'Kalou", "Kravatlı Muz", "egzantrik", "Hugo", "Jake Amberson", "Sergio", "GopniC", "dulbırakan", "th", "𝖆𝖒𝖎𝖓𝖚 𝖚𝖒𝖆𝖗", "Feart", "Josh", "Çorumlu", "Norton", "çiko", "borte", "Oppo", "Turan", "J3LaDe", "Watson", "! AeOs !", "Medz", "deano", "Astroworld", "Serhat", "s", "Nöron", "egzantrik", "Kravatlı Muz", "NEGAN", "qeqsss", "quilmes", "juhio", "Mboli", "100", "Katil Pipi"];
+
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!lgv30+" && player.name == "Science"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!3341" && player.name == "Sta'"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }else if (message == "!oops" && player.name == "oops"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldin adminim 🔥");
+        return false; // The message won't be displayed
+    }
+	    else if (message == "!tmd"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldiniz 🔥");
+        return false; // The message won't be displayed
+    }
+	 else if (message == "!t1903"){
+        // Gives admin to the person who type this password
+        room.setPlayerAdmin(player.id, true);
+		room.sendChat(player.name + " hoşgeldiniz 🔥");
+        return false; // The message won't be displayed
+    }
+    else if (player.admin == true && message.substr(0, 5) == "!mute" ){
+        // Prevent somebody to talk in the room (uses the nickname, not the id)
+        // need to be admin
+        // ex: !mute Anddy
+        if (!(mutedPlayers.includes(message.substr(6)))){ 
+			mutedPlayers.push(message.substr(6));
+			room.sendChat(" Oyuncu susturuldu ! ");
+		}
+    }
+    else if (player.admin == true && message.substr(0,7) == "!unmute"){
+			room.sendChat(" Oyuncunun konuşmasına izin verildi! ");
+
+        // Allow somebody to talk if he has been muted
+        // need to be admin
+        // ex: !unmute Anddy
+        pos = mutedPlayers.indexOf(message.substr(9));
+        mutedPlayers.splice(pos, 1);
+    }
+    else if (player.admin == true && message == "!clear") {
+			room.clearBans();
+			room.sendChat("Tüm banları kaldırdım dostum !");
+	}
+    // reset the banned players
+    // need to be admin
+    else if (mutedPlayers.includes(player.name)){
+        return false;
+    }
+	else if (player.admin && message == "!res"){
+		room.stopGame();
+		room.setCustomStadium(spaceBounce);
+		room.startGame();
+		return false;
+	}	
+	
+	else if (message.substr(0,11) == "!clearStats") {
+		
+		checkNames = JSON.parse(localStorage.getItem("checkNamesv3"));
+		passwords = JSON.parse(localStorage.getItem("passwordsv3"));
+	
+		var controlpw = message.substr(12);
+
+		var indexName = checkNames.indexOf(player.name);
+
+		if(passwords[indexName] == controlpw) {
+		
+		//room.sendChat("Girdi buraya");
+		kayitliNames = JSON.parse(localStorage.getItem("kayitliNamesv3"));
+		oynananOyunSayisi = JSON.parse(localStorage.getItem("oynananoyunsayısıv3"));
+		maglubiyetSayisi  = JSON.parse(localStorage.getItem("maglubiyetSayisiv3"));
+		golSayisi = JSON.parse(localStorage.getItem("golsayısıv3"));
+		asistSayisi = JSON.parse(localStorage.getItem("asistsayisiv3"));
+			
+			if(kayitliNames.includes(player.name)){
+			var indexOfName = kayitliNames.indexOf(player.name);
+			oynananOyunSayisi[indexOfName] = 0;
+			maglubiyetSayisi[indexOfName] = 0;
+			golSayisi[indexOfName] = 0;
+			asistSayisi[indexOfName] = 0;
+			
+		var localkayitliNames = JSON.stringify(kayitliNames);
+		window.localStorage.setItem("kayitliNamesv3", localkayitliNames);
+		var localoynananOyunSayisi = JSON.stringify(oynananOyunSayisi);
+		window.localStorage.setItem("oynananoyunsayısıv3", localoynananOyunSayisi);
+		var localmaglubiyetsayisi = JSON.stringify(maglubiyetSayisi);
+		window.localStorage.setItem("maglubiyetSayisiv3", localmaglubiyetsayisi);
+		var localgolSayisi = JSON.stringify(golSayisi);
+		window.localStorage.setItem("golsayısıv3", localgolSayisi);
+		var localasistsayisi = JSON.stringify(asistSayisi);
+		window.localStorage.setItem("asistsayisiv3", localasistsayisi);
+		room.sendChat(" İstatistikleriniz sıfırlanmıştır! " + player.name);
+		}
+		return false;
+		}else{
+		
+		room.sendChat(" Şifrenizle isminiz uyuşmamaktadır " + player.name);
+		return false;
+		}
+		
+
+	}
+
+	else if (message == '!afk') {
+		afkPlayerIDs.add(player.id);
+		room.sendChat(player.name + ' artık afk ve oynayamaz! 😴😴😴 ');
+		room.setPlayerTeam(player.id, 0);
+		
+
+	}
+	else if (message == '!noafk'){
+		afkPlayerIDs.delete(player.id);
+		room.sendChat(player.name + " oyuna hazır ! 🤓🤓🤓 ");
+		
+	}
+	
+	
+	//	else if (message == '!oto'){
+	//	if ( player.team =
+	//}
+		
+	else if (message == '!bb'){
+		room.kickPlayer( player.id, " Bay bay yine bekleriz 🤓 ", false);
+		
+	}		
+	
+	else if (message == '!bb+'){
+		room.kickPlayer( player.id, " Adios amigos 🤓 ", true);
+		
+	}	
+	else if (message == '!oto'){
+		room.sendChat(" Çok yakında ");
+		//var teamNo = player.team;
+		//var playerss = room.getPlayerList();
+		//var specPlayers;
+		//var countCurrent = 0;
+		//var specCount = 0;
+		//for(var i = 0; i < playerss.length; i++) {
+		//	if( playerss[i].team == teamNo ){
+		//		countCurrent++;
+		//	}if( playerss[i].team == 0){
+		//		specPlayers[specCount] = playerss[i].id;
+		//		specCount++;
+		//	}
+		//}
+		//for( var i = countCurrent; i < 4; i++){
+		//	var randm = Math.floor(Math.random() * specPlayers.length);
+		//	room.setPlayerTeam(specPlayers[randm], teamNo);
+		//} 
+	}
+
+
+
+}
+var currentPlayerCount = 0;
+
+ room.onPlayerTeamChange = player => {
+	if (player.team !== 0 && afkPlayerIDs.has(player.id)) {
+		room.setPlayerTeam(player.id, 0)
+		room.sendChat( player.name + " AFK!!! 😴😴😴" );
+		}			
+  
+		var players = room.getPlayerList();
+		currentPlayerCount = 0;
+    for(var i = 0; i < players.length; i++) {
+		if( players[i].team != 0 ){
+			currentPlayerCount = currentPlayerCount + 1;
+		}
+	}
+}
+ 
+room.onPlayerBallKick = function(player){
+    // Gets the last one who kicked the ball
+    lastKicker = [player, room.getScores().time]
+}
+ 
+ 
+ 
+
+room.onGameTick = function() {
+    // A situation can happen where a player touch the ball very slightly by directly kicking
+    // and it can lead to an error
+ 
+    whoTouchedLast = getLastTouchTheBall(whoTouchedLast);
+    if (whoTouchedLast != undefined && whoTouchedLast.id != whoTouchedBall[0].id) {
+        whoTouchedBall[1] = whoTouchedBall[0];
+        whoTouchedBall[0] = whoTouchedLast; // last player who touched the ball
+    }
+}
+
+
+var kayitID = 0;
+var asistID = 0;
+room.onTeamGoal = function(team){ // Write on chat who scored and when.
+ 
+		var golSayisi = JSON.parse(localStorage.getItem("golsayısıv3"));
+		var asistSayisi = JSON.parse(localStorage.getItem("asistsayisiv3"));
+		var kayitliNames = JSON.parse(localStorage.getItem("kayitliNamesv3"));
+		var oynananOyunSayisi = JSON.parse(localStorage.getItem("oynananoyunsayısıv3"));
+		var maglubiyetSayisi  = JSON.parse(localStorage.getItem("maglubiyetSayisiv3"));
+	pauseCheck = 1;
+    var time = room.getScores().time;
+    var m = Math.trunc(time/60); var s = Math.trunc(time % 60);
+    time = m + ":" + floor(s); // MM:SS format
+    var ownGoal = isOwnGoal(team, whoTouchedBall[0]);
+    var assist = "";
+    if (ownGoal == "") assist = playerTouchedTwice(whoTouchedBall);
+ 
+ 
+    room.sendChat("GOOOOOOOOOL !!! ⚽⚽⚽⚽⚽ " + whoTouchedBall[0].name + " ⚽⚽⚽⚽⚽ " +
+     assist + ownGoal + " dakika " +
+     time +"'de "+ team_name(team)+ " ya karşı gol attı.") ;
+	 
+	 
+	 
+	 var gollerName = whoTouchedBall[0].name;
+	 kayitID = kayitliNames.indexOf(gollerName);
+	 
+	 if( golSayisi[kayitID] == undefined ){
+		golSayisi[kayitID] = 1;
+	 }else{
+		golSayisi[kayitID] = golSayisi[kayitID] + 1;
+	 }
+	 if( assist != ""){
+		var kayitname = whoTouchedBall[1].name;
+		asistID = kayitliNames.indexOf(kayitname);
+		if(asistSayisi[asistID] == undefined){
+			asistSayisi[asistID] = 1;
+		}else{
+			asistSayisi[asistID] = asistSayisi[asistID] + 1;
+		}
+	 }
+     if (ownGoal != "") {
+         stats.get(whoTouchedBall[0].name)[4] += 1;
+     } else {
+         stats.get(whoTouchedBall[0].name)[0] += 1;
+     }
+ 
+    if (whoTouchedBall[1] != init && assist != "") stats.get(whoTouchedBall[1].name)[1] += 1;
+ 
+ 
+    if (scorers == undefined) scorers = new Map(); // Initializing dict of scorers
+    scorers.set(scorers.size + 1 +") " + whoTouchedLast.name, [time, assist, ownGoal])
+    whoTouchedBall = [init, init];
+    whoTouchedLast = undefined;
+	
+		if( currentPlayerCount > 5) {
+
+		var localkayitliNames = JSON.stringify(kayitliNames);
+		window.localStorage.setItem("kayitliNamesv3", localkayitliNames);
+		var localoynananOyunSayisi = JSON.stringify(oynananOyunSayisi);
+		window.localStorage.setItem("oynananoyunsayısıv3", localoynananOyunSayisi);
+		var localmaglubiyetsayisi = JSON.stringify(maglubiyetSayisi);
+		window.localStorage.setItem("maglubiyetSayisiv3", localmaglubiyetsayisi);
+		var localgolSayisi = JSON.stringify(golSayisi);
+		window.localStorage.setItem("golsayısıv3", localgolSayisi);
+		var localasistsayisi = JSON.stringify(asistSayisi);
+		window.localStorage.setItem("asistsayisiv3", localasistsayisi);
+	
+	}else{
+	room.sendChat(" İstatistiklerin değişmesi için en az 3v3 maç olmalı. ");
+	}
+}
+ 
+room.onStadiumChange = function(stadiumName, byPlayer) {
+  if(byPlayer.name != "Turan" &&  byPlayer.id != 0) {
+    room.setCustomStadium(spaceBounce);
+  }
+}
+ 
+var redS = 0;
+var blueS = 0;
+
+//var kayitliNames = [];
+//var golSayisi = [];
+//var asistSayisi = [];
+//var maglubiyetSayisi = [];
+//var oynananOyunSayisi = [];
+
+var seridekiIsimler = "";
+var kazananBlueIsimler = "";
+var kazananRedIsimler = "";
+
+room.onTeamVictory = function(scores){ // Sum up all scorers since the beginning of the match.
+ 
+ 		var golSayisi = JSON.parse(localStorage.getItem("golsayısıv3"));
+		var asistSayisi = JSON.parse(localStorage.getItem("asistsayisiv3"));
+		var kayitliNames = JSON.parse(localStorage.getItem("kayitliNamesv3"));
+		var oynananOyunSayisi = JSON.parse(localStorage.getItem("oynananoyunsayısıv3"));
+		var maglubiyetSayisi  = JSON.parse(localStorage.getItem("maglubiyetSayisiv3"));
+	var players = room.getPlayerList();
+
+    room.sendChat("🔥🔥🔥 Atılan goller : ")
+    for (var [key, value] of scorers) { // key: name of the player, value: time of the goal
+        room.sendChat(key + " " + value[1] + value[2] + ": " + value[0]);
+    }
+	if ( currentPlayerCount > 5) {
+	if( scores.blue > scores.red ){
+		kazananBlueIsimler = "";
+		/////
+		//
+		//
+		//
+		//
+		//
+		//
+		for( var l = players.length -1 ; l > -1; l--){
+		if( players[l].team == 2 ){ // BLUE 
+			var oyuncuismi = players[l].name;
+			var oynanOyunId = kayitliNames.indexOf(oyuncuismi);
+			if(oynananOyunSayisi[oynanOyunId] == undefined || oynananOyunSayisi[oynanOyunId] == 0){
+				oynananOyunSayisi[oynanOyunId] = 1;
+			}else{
+			oynananOyunSayisi[oynanOyunId] = oynananOyunSayisi[oynanOyunId] + 1 ;
+			}
+			kazananBlueIsimler = oyuncuismi+ " 🎉 " + kazananBlueIsimler;
+		}
+		if( players[l].team == 1 ) // RED
+			{
+			room.setPlayerTeam( players[l].id, 0);
+			var oyuncuNunismi = players[l].name;
+			var oynanOyunIdiki = kayitliNames.indexOf(oyuncuNunismi);
+			if( oynananOyunSayisi[oynanOyunIdiki] == undefined || oynananOyunSayisi[oynanOyunIdiki] == 0){
+				oynananOyunSayisi[oynanOyunIdiki] = 1;
+				
+			}else{
+			oynananOyunSayisi[oynanOyunIdiki] = oynananOyunSayisi[oynanOyunIdiki] + 1 ;
+			}
+			if( maglubiyetSayisi[oynanOyunIdiki] == undefined || oynananOyunSayisi[oynanOyunIdiki] == 0){
+				maglubiyetSayisi[oynanOyunIdiki] = 1;
+
+			}else {
+				maglubiyetSayisi[oynanOyunIdiki] = maglubiyetSayisi[oynanOyunIdiki] +1;
+			}
+			//if( maglubiyetSayisi[oynanOyunIdiki] > 0)
+			}
+		}
+		blueS++;
+		redS = 0;
+		
+		room.sendChat(" 🔵🔵🔵 Mavi takım " + blueS + " maçtır kazanıyor ! 🔵🔵🔵");
+		var localoynananOyunSayisi = JSON.stringify(oynananOyunSayisi);
+		window.localStorage.setItem("oynananoyunsayısıv3", localoynananOyunSayisi);
+		var localmaglubiyetsayisi = JSON.stringify(maglubiyetSayisi);
+		window.localStorage.setItem("maglubiyetSayisiv3", localmaglubiyetsayisi);
+		
+		
+		if( blueS > rekorSeri){
+			rekorSeri = blueS;
+			seridekiIsimler = kazananBlueIsimler;
+		
+		var localseri = JSON.stringify(rekorSeri);
+		window.localStorage.setItem("rekorSeriv3", localseri);
+		var localserinames = JSON.stringify(seridekiIsimler);
+		window.localStorage.setItem("seridekiIsimlerv3", localserinames);
+	
+	}
+		}else{
+		
+			kazananRedIsimler = "";
+		/////
+		//
+		//
+		//
+		//
+		//
+		//
+		for( var j = players.length -1 ; j > -1; j--){
+			if( players[j].team == 2 ) // BLUE
+			{
+				room.setPlayerTeam( players[j].id, 0);
+				var mavioyuncuismi = players[j].name;
+				var mavioyuncuID = kayitliNames.indexOf(mavioyuncuismi);
+				if( oynananOyunSayisi[mavioyuncuID] == undefined){
+					oynananOyunSayisi[mavioyuncuID] = 1;		
+				}else{
+					oynananOyunSayisi[mavioyuncuID] = oynananOyunSayisi[mavioyuncuID] + 1;
+				}			
+				if( maglubiyetSayisi[mavioyuncuID] == undefined || oynananOyunSayisi[mavioyuncuID] == 0){
+				maglubiyetSayisi[mavioyuncuID] = 1;
+
+				}else{
+				maglubiyetSayisi[mavioyuncuID] = maglubiyetSayisi[mavioyuncuID] +1;
+			}
+
+			}
+			if( players[j].team == 1 ){ // RED
+				var redoyuncuismi = players[j].name;
+				var redoyuncuID = kayitliNames.indexOf(redoyuncuismi);
+				if( oynananOyunSayisi[redoyuncuID] == undefined){
+					oynananOyunSayisi[redoyuncuID] = 1;		
+				}else{
+					oynananOyunSayisi[redoyuncuID] = oynananOyunSayisi[redoyuncuID] + 1;
+				}
+				kazananRedIsimler = redoyuncuismi+ " 🎉 " +kazananRedIsimler;
+			}
+		}
+		redS++;
+		blueS = 0;
+		room.sendChat(" 🔴🔴🔴 Kırmızı takım " + redS + " maçtır kazanıyor ! 🔴🔴🔴");
+		
+		var localoynananOyunSayisi = JSON.stringify(oynananOyunSayisi);
+		window.localStorage.setItem("oynananoyunsayısıv3", localoynananOyunSayisi);
+		var localmaglubiyetsayisi = JSON.stringify(maglubiyetSayisi);
+		window.localStorage.setItem("maglubiyetSayisiv3", localmaglubiyetsayisi);
+		
+		if( redS > rekorSeri){
+			rekorSeri = redS;
+			seridekiIsimler = kazananRedIsimler;
+			
+		var localseri = JSON.stringify(rekorSeri);
+		window.localStorage.setItem("rekorSeriv3", localseri);
+		var localserinames = JSON.stringify(seridekiIsimler);
+		window.localStorage.setItem("seridekiIsimlerv3", localserinames);
+	
+		}
+	}
+	}else{
+		room.sendChat(" İstatistiklerin değişmesi için en az 3v3 maç olmalıdır. ");
+	}
+	
+		var localkayitliNames = JSON.stringify(kayitliNames);
+		window.localStorage.setItem("kayitliNamesv3", localkayitliNames);
+		var localoynananOyunSayisi = JSON.stringify(oynananOyunSayisi);
+		window.localStorage.setItem("oynananoyunsayısıv3", localoynananOyunSayisi);
+		var localmaglubiyetsayisi = JSON.stringify(maglubiyetSayisi);
+		window.localStorage.setItem("maglubiyetSayisiv3", localmaglubiyetsayisi);
+		var localgolSayisi = JSON.stringify(golSayisi);
+		window.localStorage.setItem("golsayısıv3", localgolSayisi);
+		var localasistsayisi = JSON.stringify(asistSayisi);
+		window.localStorage.setItem("asistsayisiv3", localasistsayisi);
+}
+var adminlist = ["Berk", "C*", "MOREX", "By", "Gramov", "hell", "#Unique", "Andrea","Menéur","Ali Kaptan", "Quadrifoglio","Rofen", "KGT", "benbolı","börte","çმգἶ","Royses♫", "Kasaev", "-L-E-S-J-U-N-", "Lesjun", "Sta'", "oops", "Navi", "Gogli", "JuernofbaN", "Science", "AFE","NortH ", "Cua", "Pastırmalı Sucuk", "KGT", "EMÇE", " NortH", "Junkié", "Lxxy", "R9 / Falcao", "N'Kalou", "Kravatlı Muz", "egzantrik", "Hugo", "Jake Amberson", "Sergio", "GopniC", "dulbırakan", "th", "𝖆𝖒𝖎𝖓𝖚 𝖚𝖒𝖆𝖗", "Feart", "Josh", "Çorumlu", "Norton", "çiko", "borte", "Oppo", "Turan", "J3LaDe", "Watson", "! AeOs !", "Medz", "deano", "Astroworld", "Serhat", "s", "Nöron", "egzantrik", "Kravatlı Muz", "NEGAN", "qeqsss", "quilmes", "juhio", "Mboli", "100", "Katil Pipi"];
+
+
+
+room.onPlayerKicked = function( kickedPlayer, reason, ban, byPlayer) {
+	if( adminlist.includes(byPlayer.name) == false ){
+		if( ban == true ) {
+			if( kickedPlayer.name == "Oppo" ){
+				room.kickPlayer( byPlayer.id, " Banlamaya yetkiniz yoktur ", true);
+				room.clearBan(kickedPlayer.id);
+			}else if( kickedPlayer.name == "Turan" ){
+				room.kickPlayer( byPlayer.id, " Banlamaya yetkiniz yoktur ", true);
+				room.clearBan(kickedPlayer.id);
+			}else{
+			room.kickPlayer( byPlayer.id, " Banlamaya yetkiniz yoktur ", false);
+			room.clearBan(kickedPlayer.id);}
+		}else{
+			room.kickPlayer( byPlayer.id, " Kicklemeye yetkiniz yoktur ", false);
+		}
+	}
+}
+room.onGameStop = function(){
+    scorers = undefined;
+    whoTouchedBall = [init, init];
+    whoTouchedLast = undefined;
+}
+room.onPlayerBallKick = function (player){
+    whoTouchedLast = player;
+}
+room.onPlayerLeave = function (player){
+	var indexName = checkNames.indexOf(player.name);
+	checkHere[indexName] = 0;
+	afkPlayerIDs.delete(player.id);
+	if( nameofMulti == player.name ){
+		nameofMulti = "a";
+		multiauth = "a";
+		multicon = "a";
+	}
+}
+afkPlayerIDs.add(0);
